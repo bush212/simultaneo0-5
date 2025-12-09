@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<title>Reporte - Reporte MIP (Objetivo Simultáneo)</title>
+<style>
+body {font-family:Segoe UI, Arial, sans-serif;background:#f6f8fb;margin:0}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.card{background:#fff;margin:16px 0;padding:20px;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.badge-ok{color:#2ecc71;font-weight:bold} .badge-warn{color:#e74c3c;font-weight:bold}
+table{border-collapse:collapse;width:100%} th,td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left}
+th{background:#fafafa}
+.code{font-family:ui-monospace,Consolas,monospace;color:#555}
+</style></head><body><div class="container">
+<div class="card"><h1 style="margin:0">Reporte MIP (Objetivo Simultáneo)</h1>
+<p style="margin:.25rem 0">Generado: 09/12/2025 20:44</p>
+<p style="margin:.25rem 0"><strong>Método:</strong> MIP (suma ponderada normalizada, simultáneo)</p>
+<p style="margin:.25rem 0"><em>min  w_veh·(#veh/|K|) + w_dist·(distancia/D_NORM_M).</em></p>
+<p style="margin:.25rem 0"><em>Tiempos de calle ×1.40</em></p>
+<div class='card'><h2 style='margin-top:0'>Tiempos</h2><p><strong>Gurobi (simultáneo):</strong> 36.41 s</p><p><strong>Pesos:</strong> veh=0.50, dist=0.50</p><p><strong>Escalas:</strong> |K|=7, D_NORM_M≈70.2 km</p><p><strong>Distancia total MIP usada en resumen:</strong> 77.5 km</p></div>
+<p style="margin:.25rem 0"><strong>TimeLimit Gurobi:</strong> sin límite</p>
+</div>
+<div class="card"><h2 style="margin-top:0">Resumen</h2>
+<p><strong>Trabajadores:</strong> 9 | <strong>Vehículos usados:</strong> 4</p>
+<p><strong>Distancia total recorrida (MIP):</strong> 77.5 km</p>
+<p><strong>Tiempo total (suma de rutas):</strong> 132.4 min</p>
+<p><strong>Tiempo máximo de ruta:</strong> 42.6 min (horizonte 60 min)</p>
+<p><strong>Rutas que exceden el horizonte:</strong> 0 de 4</p>
+<p><strong>Tiempo promedio por ruta:</strong> 33.1 min</p>
+<p><strong>Eficiencia global (ocupación de capacidad):</strong> 40.9%</p>
+</div>
+<div class='card'><h2 style='margin-top:0'>Resumen por vehículo (tabla rápida)</h2><table><tr><th>Vehículo</th><th>Tipo</th><th>Paradas hogar</th><th>Distancia MIP (km)</th><th>Tiempo (min)</th><th>Estado horizonte</th></tr><tr><td>🚌 V233</td><td>Mediano</td><td>2</td><td>23.3</td><td>39.6</td><td>OK</td></tr><tr><td>🚌 V448</td><td>Mediano</td><td>3</td><td>21.5</td><td>36.8</td><td>OK</td></tr><tr><td>🚌 V481</td><td>Mediano</td><td>1</td><td>8.0</td><td>13.4</td><td>OK</td></tr><tr><td>🚌 V498</td><td>Mediano</td><td>3</td><td>24.7</td><td>42.6</td><td>OK</td></tr></table></div>
+<div class="card"><h2 style="margin-top:0">Mapa</h2>
+<iframe src="mapa_2025-12-09_20-41-20.html" width="100%" height="520" frameborder="0"></iframe></div>
+<div class="card"><h2 style="margin-top:0">Detalle por vehículo</h2>
+
+<div class="card" style="border-left:6px solid #1f77b4">
+<h3 style="margin:0">🚌 V233 — Mediano (cap: 8)</h3>
+<p><strong>Hogares:</strong> 2 | <strong>Estaciones:</strong> PLAZA PUENTE ALTO</p>
+<p><strong>Tiempo total de ruta (calle):</strong> 39.6 min <span class='badge-ok'>OK 60 min</span> | <strong>Distancia MIP:</strong> 23.3 km</p>
+<p><strong>Orden hogares:</strong></p><ul><li>Parada 1: Trabajador 9 (ID 9) — t(calle): <strong>0.0 min</strong> — Metro objetivo: PLAZA PUENTE ALTO</li><li>Parada 2: Trabajador 8 (ID 8) — t(calle): <strong>17.1 min</strong> — Metro objetivo: PLAZA PUENTE ALTO</li></ul>
+<p><strong>Orden metros:</strong></p><ul><li>Metro 1: <strong>PLAZA PUENTE ALTO</strong> — t(calle): <strong>39.6 min</strong></li></ul>
+<iframe src="mapa_V233_2025-12-09_20-41-20.html" width="100%" height="360" frameborder="0"></iframe>
+</div>
+<div class="card" style="border-left:6px solid #aec7e8">
+<h3 style="margin:0">🚌 V448 — Mediano (cap: 6)</h3>
+<p><strong>Hogares:</strong> 3 | <strong>Estaciones:</strong> VICENTE VALDES → VICUÑA MACKENNA</p>
+<p><strong>Tiempo total de ruta (calle):</strong> 36.8 min <span class='badge-ok'>OK 60 min</span> | <strong>Distancia MIP:</strong> 21.5 km</p>
+<p><strong>Orden hogares:</strong></p><ul><li>Parada 1: Trabajador 5 (ID 5) — t(calle): <strong>0.0 min</strong> — Metro objetivo: VICENTE VALDES</li><li>Parada 2: Trabajador 6 (ID 6) — t(calle): <strong>11.4 min</strong> — Metro objetivo: VICUÑA MACKENNA</li><li>Parada 3: Trabajador 7 (ID 7) — t(calle): <strong>27.1 min</strong> — Metro objetivo: VICUÑA MACKENNA</li></ul>
+<p><strong>Orden metros:</strong></p><ul><li>Metro 1: <strong>VICENTE VALDES</strong> — t(calle): <strong>34.9 min</strong></li><li>Metro 2: <strong>VICUÑA MACKENNA</strong> — t(calle): <strong>36.8 min</strong></li></ul>
+<iframe src="mapa_V448_2025-12-09_20-41-20.html" width="100%" height="360" frameborder="0"></iframe>
+</div>
+<div class="card" style="border-left:6px solid #ff7f0e">
+<h3 style="margin:0">🚌 V481 — Mediano (cap: 4)</h3>
+<p><strong>Hogares:</strong> 1 | <strong>Estaciones:</strong> CRISTOBAL COLON</p>
+<p><strong>Tiempo total de ruta (calle):</strong> 13.4 min <span class='badge-ok'>OK 60 min</span> | <strong>Distancia MIP:</strong> 8.0 km</p>
+<p><strong>Orden hogares:</strong></p><ul><li>Parada 1: Trabajador 4 (ID 4) — t(calle): <strong>0.0 min</strong> — Metro objetivo: CRISTOBAL COLON</li></ul>
+<p><strong>Orden metros:</strong></p><ul><li>Metro 1: <strong>CRISTOBAL COLON</strong> — t(calle): <strong>13.4 min</strong></li></ul>
+<iframe src="mapa_V481_2025-12-09_20-41-20.html" width="100%" height="360" frameborder="0"></iframe>
+</div>
+<div class="card" style="border-left:6px solid #ffbb78">
+<h3 style="margin:0">🚌 V498 — Mediano (cap: 4)</h3>
+<p><strong>Hogares:</strong> 3 | <strong>Estaciones:</strong> VICENTE VALDES → VICUÑA MACKENNA</p>
+<p><strong>Tiempo total de ruta (calle):</strong> 42.6 min <span class='badge-ok'>OK 60 min</span> | <strong>Distancia MIP:</strong> 24.7 km</p>
+<p><strong>Orden hogares:</strong></p><ul><li>Parada 1: Trabajador 1 (ID 1) — t(calle): <strong>0.0 min</strong> — Metro objetivo: VICENTE VALDES</li><li>Parada 2: Trabajador 2 (ID 2) — t(calle): <strong>14.2 min</strong> — Metro objetivo: VICUÑA MACKENNA</li><li>Parada 3: Trabajador 3 (ID 3) — t(calle): <strong>25.6 min</strong> — Metro objetivo: VICENTE VALDES</li></ul>
+<p><strong>Orden metros:</strong></p><ul><li>Metro 1: <strong>VICENTE VALDES</strong> — t(calle): <strong>40.8 min</strong></li><li>Metro 2: <strong>VICUÑA MACKENNA</strong> — t(calle): <strong>42.6 min</strong></li></ul>
+<iframe src="mapa_V498_2025-12-09_20-41-20.html" width="100%" height="360" frameborder="0"></iframe>
+</div></div></body></html>
